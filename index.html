@@ -4,9 +4,11 @@
 <body>
     <script>
         fetch("https://node-testing-nine.vercel.app/api/serverless")
+            .then((res => res.text()))
             .then((data) => {
                 console.log(data)
             })
+
     </script>
 </body>
 
