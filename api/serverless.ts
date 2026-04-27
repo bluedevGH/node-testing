@@ -6,7 +6,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.setHeader('Access-Control-Allow-Headers', "Content-Type"); //type of headers allowed
 
     if (req.method === "OPTIONS") {
-        return res.statusCode(200);
+        return res.status(200);
     }
 
     console.log(req)
