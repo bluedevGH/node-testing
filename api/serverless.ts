@@ -1,4 +1,4 @@
-export async function GET(req, res) {
+export async function GET(req: Request, res: Response) {
     console.log(req)
     console.log(res)
     res.setHeader('Content-Type', 'text/html');
